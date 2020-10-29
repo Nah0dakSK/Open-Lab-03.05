@@ -6,10 +6,12 @@ namespace Open_Lab_03._05
     {
         public bool MatchCaseInsensitive(string str1, string str2)
         {                      
-           var str1;
-            var str2;
-            var IsSame = string.Equals(str1, str2, StringComparison.OrdinalIgnoreCase);
-            return IsSame;
+           str1 = null;
+            str2 = null;
+            int output = 0;
+            output = string.Compare(str1, str2);
+            Console.WriteLine(output.ToString());
+            Console.ReadLine();
         }
     }
 }
